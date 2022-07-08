@@ -7,7 +7,7 @@ def fib_numb()->None:
         description='Calculate Fibonacci numbers'
     )
     parser.add_argument('--number', action='store',type=int, required=True,\
-        help="Fibonacci number to be  calculated")
+        help="Fibonacci number to be calculated")
     args = parser.parse_args()
     print(f"Your Fibonacci number is: " \
         f"{recurring_fibonacci_number (number=args.number)}")
