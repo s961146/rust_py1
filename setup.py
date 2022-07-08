@@ -21,4 +21,9 @@ setup(
     ],
     python_requires='>=3',
     tests_require=['pytest'],
+    entry_points={
+        'console_scripts': [
+             'fib-number = rust_py1.cmd.fib_numb:fib_numb',
+        ],
+    },
 )
